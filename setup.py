@@ -6,8 +6,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name="testingCICD",
     version="0.0.0.2",
-    author="Example Author",
-    author_email="author@example.com",
+    author="digitalTevel",
+    author_email="digitalTevel@gmail.com",
     description="A small example package",
     long_description=long_description,
     long_description_content_type="text/markdown",
