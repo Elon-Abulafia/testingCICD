@@ -1,5 +1,5 @@
 import setuptools
-import src.example_package
+import testingCICD.src.example_package
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
