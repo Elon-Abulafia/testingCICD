@@ -23,7 +23,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="testingCICD",
-    version=get_version("src/example_package/__init__.py"),
+    version=get_version("example_package/__init__.py"),
     author="digitalTevel",
     author_email="digitalTevel@gmail.com",
     description="A small example package",
@@ -38,7 +38,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    package_dir={"": "example_package"},
+    packages=setuptools.find_packages(where="example_package"),
     python_requires=">=3.6",
 )
