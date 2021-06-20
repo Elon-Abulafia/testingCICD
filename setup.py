@@ -1,7 +1,7 @@
 import setuptools
 
 version = {}
-with open("...example_package/version.py") as fp:
+with open("example_package/version.py") as fp:
     exec(fp.read(), version)
 
 with open("README.md", "r", encoding="utf-8") as fh:
