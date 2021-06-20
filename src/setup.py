@@ -1,7 +1,7 @@
 import setuptools
-import src.example_package
+import example_package
 
-with open("README.md", "r", encoding="utf-8") as fh:
+with open("../README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
