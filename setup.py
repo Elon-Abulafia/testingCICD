@@ -1,5 +1,5 @@
 import setuptools
-from .example_package import __version__
+from src.example_package import __version__
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -21,7 +21,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "example_package"},
-    packages=setuptools.find_packages(where="example_package"),
+    package_dir={"": "src/example_package"},
+    packages=["src/example_package", "tests"],
     python_requires=">=3.6",
 )
