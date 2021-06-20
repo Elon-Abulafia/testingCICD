@@ -1,15 +1,12 @@
 import setuptools
-
-version = {}
-with open("example_package/version.py") as fp:
-    exec(fp.read(), version)
+import example_package
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="testingCICD",
-    version=version['__version__'],
+    version=example_package.__version__,
     author="digitalTevel",
     author_email="digitalTevel@gmail.com",
     description="A small example package",
