@@ -1,12 +1,12 @@
 import setuptools
-import example_package
+import src
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="testingCICD",
-    version=src.example_package.__version__,
+    version=src.__version__,
     author="digitalTevel",
     author_email="digitalTevel@gmail.com",
     description="A small example package",
