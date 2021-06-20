@@ -1,12 +1,15 @@
 import setuptools
-import src
+
+version = {}
+with open("...example_package/version.py") as fp:
+    exec(fp.read(), version)
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="testingCICD",
-    version=src.__version__,
+    version=version['__version__'],
     author="digitalTevel",
     author_email="digitalTevel@gmail.com",
     description="A small example package",
@@ -21,7 +24,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    package_dir={"": "example_package"},
+    packages=setuptools.find_packages(where="example_package"),
     python_requires=">=3.6",
 )
